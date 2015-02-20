@@ -1,0 +1,180 @@
+<html>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="mod-com-design.css">
+<head>
+	<meta charset="utf-8">
+	<title>Beer - Fiche détaillée</title>
+    <link rel="shortcut icon" href="images/bierelogo.png" type="image/x-icon"/> 
+    <link rel="icon" href="images/bierelogo.png" type="image/x-icon"/>
+    <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/mes_scripts.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+<body>
+	<div class="bloc_page">
+		<header>
+				<div id="div_titre">
+					<img src="images/bierelogo.png" alt="Logo" id="logo" />
+					<h1><a href="accueil.html">BEER</a></h1>
+					<h2>Une histoire de malt</h2>
+				</div>
+				
+
+				<nav id="navigateur">
+					<ul>
+						<li><a href="accueil.html">Accueil</a></li>
+                        <li><a href="liste_biere.html">Les Bières</a></li>
+						<li><a href="formulaire.html">Formulaire d'ajout</a></li>
+					</ul>
+				</nav>
+
+				<hr id="separateur">
+		</header>
+
+		<section id="section_principale">
+			<aside>
+                    <h1>La bière, en détail...</h1>
+                    <img src="images/bulle.png" alt="" id="fleche_bulle" />
+                    <p id="photo_homer"><img src="images/homer.jpg" alt="Photo de Homer" /></p>
+                    <p>Tooo ! Moi c'est Homer, fervent défenseur de la bière Duff.</p>
+                    <p>Voici toutes les informations nécessaires pour que tu découvres cette bonne bière !</p>
+                    <p>Je suis aussi présent sur les réseaux sociaux que tu connais bien ;)</p>
+
+                    <p id="les_logos">
+                        <img src="images/white_facebook.png" alt="Facebook" />
+                        <img src="images/white_twitter.png" alt="Twitter" />
+                        <img src="images/white_vimeo.png" alt="Vimeo" />
+                        <img src="images/white_pinterest.png" alt="Pinterest" />
+                        <img src="images/white_rss.png" alt="RSS" />
+                    </p>
+        	</aside>
+
+        	<section id="section_secondaire">
+        		<article id="article_biere">
+        			<h1>Duvel Tripel Hop</h1>
+
+        			<div id="la_photo_en_grand">
+        				<img src="images/duvel_tripelhop.jpg">
+        			</div>
+        			<div id="detail_biere">
+        				<table>
+                            <tr>
+    			        		<td>Origine</td>
+                                <td>: Belgique</td>
+                            </tr>
+    			        		
+                            <tr>
+                                <td>Couleur</td>
+                                <td>: Blonde</td>
+                            </tr>
+                            <tr>
+                                <td>Degré</td>
+                                <td>: 9,5°</td>
+                            </tr>
+    			        	<tr>
+                                <td>Note</td>
+                                <td>: 4/5</td>
+                            </tr>
+    			        </table>	
+			        		</br>
+                        <table>
+                            <tr>
+                                <td>Fermentation</td>
+                                <td>: Haute</td>
+                            </tr>
+			        		<tr>
+			        		   <td>Brasserie</td>
+                               <td>: Brasserie Duvel-Moortgat</td>
+			        	    </tr>
+                        </table>
+        			</div>
+        			<div id="description_biere">
+        				<h2>Description de la bière : </h2>
+        				<p>Duvel-Moortgat a bien compris que sa Tripel Hop était attendue chaque année comme le printemps ! Avec ce millésime 2014 le brasseur belge suit encore plus la tendance en ajoutant le très branché houblon américain Mosaic. Résultat cette Duvel a bien les caractéristiques de la maison. La blondeur brillante dans le verre se trouble lorsqu’on y laisse tomber le petit dépôt de levure (indispensable à mon goût !). Le point mousse fait son effet, c’est dense, bien blanc et cela se tient parfaitement. Au nez c’est toujours de la Duvel, avec du houblon floral, de la vivacité, mais cette fois avec des touches bien présentes de fruits exotiques comme la mangue. En bouche le « diable » parle, c’est rond, puissant avec de la fraicheur par des notes de pamplemousse rose, fruitée avec de la mangue et quelques pointes acides de passion. Cela pour nous achever, dans le bonheur, avec une belle amertume, aussi longue que maîtrisée. Bien sûr cette diablesse belge titrant 9,5%, elle sait nous faire tourner la tête tant elle se boit facilement.
+        				</br>
+        				</br>
+						C’est à mon goût l’une des Tripel Hop parmi les mieux réalisées. On a la Duvel, le houblon n’est pas là que pour faire beau ou amèriser, il apporte une vraie complexité. En fan de Duvel, je signe !</p>
+
+        			</div>
+
+
+        		</article>
+
+                <article id="article_commentaire">
+                    <h1>Commentaires</h1>
+                    <table id="tableau_commentaires">
+                        <tr>
+                            <th class="internaute">Internautes</td>
+                            <th class="commentaire">Commentaires</td>
+                        </tr>   
+                        <tr>
+                            <td>Guigui</td>
+                            <td>Comment</td>
+                        </tr> 
+                    </table>
+                    <form id="formulaire_ajout" method="post">
+                    <fieldset>
+                        <legend>Vos commentaires</legend>
+                            <ol>
+                                <li>
+                                    <label for="nom_internaute">Nom</label>
+                                    <input name="nom_internaute" placeholder="Roger">
+                                </li>
+                            
+                                <li>
+                                    <label for="commentaire">Commentaire</label>
+                                    <textarea name="commentaire" rows=10></textarea>
+                                </li>
+                            </ol>
+                    </fieldset>
+  
+                    <fieldset class="bloc_btn" id="bloc_btn_commenter">
+                        <button class="btn_submit" type=submit>Commenter !</button>
+                    </fieldset>
+                </article>
+
+        	</section>
+            
+  
+    </section>
+
+
+
+
+
+	<footer>
+		<div id="menu_footer">
+			<div id="about">
+                    <h2>A propos</h2>
+                  	<ul>
+                        <li><a href="#" id="plan_du_site">Plan du site</a></li>
+                        <li><a href="infos_légales.html">Infos légales</a></li>
+                        <li><a href="mailto:guillaume.debraize@hei.fr"><img src="images/email.png"/>Contact</a></li>
+                    </ul>
+            </div>
+
+            <div id="partenaires">
+                    <h2>Nos partenaires</h2>
+                    <ul>
+                    	<li><a href="http://www.saveur-biere.com" target="_blank">Saveur Bière</a></li>
+                        <li><a href="http://www.bierestory.fr" target="_blank">Bière Story</a></li>
+                        <li><a href="http://www.pompe-a-biere.com" target="_blank">Pompe à bière</a></li>
+                    </ul>
+            </div>
+
+            <div id="connect">
+                    <h2>Se connecter</h2>
+                    <ul>
+                        <li><a href="http://www.facebook.com" target="_blank"><img src="images/icon-facebook.png"/>Facebook</a></li>
+                        <li><a href="http://www.twitter.com" target="_blank"><img src="images/twitter_bird.png"/>Twitter</a></li>
+                    </ul>
+            </div>
+
+            <hr id="separateur2">
+        </br>
+            <p>&#169; France Copyright 2014, Beer inc.</p>
+        </div>
+	</footer>
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<html>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<head>
+	<meta charset="utf-8">
+	<title>Beer - Formulaire d'ajout</title>
+	<link rel="shortcut icon" href="images/bierelogo.png" type="image/x-icon"/> 
+	<link rel="icon" href="images/bierelogo.png" type="image/x-icon"/>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/mes_scripts.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+<body>
+<div class="bloc_page">
+	<header>
+		<div id="div_titre">
+			<img src="images/bierelogo.png" alt="Logo" id="logo" />
+			<h1><a href="accueil.html">BEER</a></h1>
+			<h2>Une histoire de malt</h2>
+		</div>
+		
+
+		<nav id="navigateur">
+			<ul>
+				<li><a href="accueil.html">Accueil</a></li>
+				<li><a href="liste_biere.html">Les Bières</a></li>
+				<li><a href="ajout.html">Formulaire d'ajout</a></li>
+			</ul>
+		</nav>
+
+		<hr id="separateur">
+	</header>
+
+	<div id="banniere_image2">
+    	<div id="banniere_description">La bière, c'est bon...</div>
+	</div>
+
+	<section id="section_principale">
+			<aside>
+	                    <h1>À propos du formulaire</h1>
+	                    <img src="images/bulle.png" alt="" id="fleche_bulle" />
+	                    <p id="photo_homer"><img src="images/homer2.jpg" alt="Photo de Homer" /></p>
+	                    <p>Tooo ! Moi c'est Homer, fervent défenseur de la bière Duff.</p>
+	                    <p>Grâce à ce formulaire tu peux ajouter une bière que tu as gouté et me dire ce que tu en a pensé.</p>
+	                    
+	                    <p id="les_logos">
+	                    	<img src="images/white_facebook.png" alt="Facebook" />
+	                    	<img src="images/white_twitter.png" alt="Twitter" />
+	                    	<img src="images/white_vimeo.png" alt="Vimeo" />
+	                    	<img src="images/white_pinterest.png" alt="Pinterest" />
+	                    	<img src="images/white_rss.png" alt="RSS" />
+	                    </p>
+	        </aside>
+	
+
+	        <section id="section_secondaire">
+	        	  				
+				<p>Voici un beau formulaire qui ne demande qu'à être rempli :</p>
+
+				<form id="formulaire_ajout" method="post" action="traitement.php">
+  					<fieldset>
+    					<legend>Étape 1: Votre bière</legend>
+
+    						<ol>
+      							<li>
+					        		<label for="nom">Nom</label>
+					        		<input  id="nom" name="nom_biere" type="text" placeholder="Duvel Tripel Hop" required autofocus>
+					      		</li>
+					     		<li>
+					        		<label for="origine">Origine</label>
+					        		<input name="origine" type="text" placeholder="France" required>
+					      		</li>
+					      		<li>
+					      			<label>Note</label>
+									<div class="rating">
+									<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+									</div>
+							    </li>
+					      		<li>
+					        		<label for="telecharge_photo">Photo*</label>
+					        		<input id="telecharge_photo" type="file" name="image" />
+					        		<p id="asterix">*l'image doit être carrée (ex : 300x300)</p>
+					      		</li>
+					    	</ol>
+					</fieldset>
+
+					<fieldset>
+				    	<legend>Étape 2: Vos coordonnées</legend>
+					      	<ol>
+					       		<li>
+					          		<label for="name">Nom</label>
+					          		<input name="name" placeholder="Prénom et Nom" required autofocus></input>
+					        	</li>
+					        	<li>
+					          		<label for="email">Adresse e-mail</label>
+					        		<input name="email" type="email" placeholder="exemple@domaine.com" required>
+					        	</li>
+					        </ol>
+					</fieldset>
+
+					<fieldset>
+				    	<legend>Étape 3: Caractéristiques et commentaires</legend>
+					      	<ol>
+					       		<li>
+					          		<label for="couleur">Couleur</label>
+					          		<select name="couleur" id="couleur">
+					          				<option value="none">-</option>
+									        <option value="blanche">Blanche</option>
+									        <option value="blonde">Blonde</option>
+									        <option value="ambree">Ambrée</option>
+									        <option value="brune">Brune</option>
+									        <option value="ambree">Noir</option>
+									        <option value="rouge">Rouge</option>
+							       	</select>
+					        	</li>
+					        	<li>
+					          		<label for="alcoolisee">Bière alcoolisée ?</label>
+					          			<table id="tab_btn_radio">
+					        				<tr>
+					        					<td>
+					        						<input class="btn_radio" name="alcoolisee" type="radio" value="oui" id="alcoolisee" required><label class="label_btn_radio" for="alcoolisee">Oui</label>
+					        					</td>
+					        					<td>
+					        						<input class="btn_radio" name="alcoolisee" type="radio" value="non" id="non_alcoolisee" required><label class="label_btn_radio" for="non_alcoolisee">Non</label>
+					        					</td>
+					        				</tr>
+					        			</table>
+					        	</li>
+					        	<li id="toHide">
+					          		<label for="degre">Degré d'alcool</label>
+					        		<input name="degre" type="reel" placeholder="5.9">
+					        	</li>
+					        	<li>
+					          		<label for="nom_brasserie">Nom de la brasserie</label>
+					        		<input name="nom_brasserie" placeholder="Duvel-Moortgat">
+					        	</li>
+					        	<li>
+					          		<label for="fermentation">Fermentation</label>
+					        		<select name="fermentation" id="fermentation">
+					          				<option value="none">-</option>
+									        <option value="basse">Basse</option>
+									        <option value="moyenne">Moyenne</option>
+									        <option value="haute">Haute</option>
+							       	</select>
+					        	</li>
+					        	<li>
+          							<label for="description">Description</label>
+          							<textarea name="description" rows=5></textarea>
+        						</li>
+					        </ol>
+					</fieldset>
+  
+					<fieldset class="bloc_btn" id="bloc_btn_ajouter">
+    					<button class="btn_submit" type=submit>Ajouter !</button>
+  					</fieldset>
+				</form>
+			</section>
+	</section>
+
+	<footer>
+		<div id="menu_footer">
+			<div id="about">
+                    <h2>A propos</h2>
+                  	<ul>
+                        <li><a href="#" id="plan_du_site">Plan du site</a></li>
+                        <li><a href="infos_légales.html">Infos légales</a></li>
+                        <li><a href="mailto:guillaume.debraize@hei.fr"><img src="images/email.png"/>Contact</a></li>
+                    </ul>
+            </div>
+
+            <div id="partenaires">
+                    <h2>Nos partenaires</h2>
+                    <ul>
+                    	<li><a href="http://www.saveur-biere.com" target="_blank">Saveur Bière</a></li>
+                        <li><a href="http://www.bierestory.fr" target="_blank">Bière Story</a></li>
+                        <li><a href="http://www.pompe-a-biere.com" target="_blank">Pompe à bière</a></li>
+                    </ul>
+            </div>
+
+            <div id="connect">
+                    <h2>Se connecter</h2>
+                    <ul>
+                        <li><a href="http://www.facebook.com" target="_blank"><img src="images/icon-facebook.png"/>Facebook</a></li>
+                        <li><a href="http://www.twitter.com" target="_blank"><img src="images/twitter_bird.png"/>Twitter</a></li>
+                    </ul>
+            </div>
+
+            <hr id="separateur2">
+        </br>
+            <p>&#169; France Copyright 2014, Beer inc.</p>
+        </div>
+	</footer>
+
+</div>
+</body>
+</html>

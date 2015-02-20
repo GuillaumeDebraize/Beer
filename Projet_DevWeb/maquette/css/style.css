@@ -1,0 +1,745 @@
+/*Style général*/
+body{
+	margin:0px;
+	background-image: url('../images/champs_de_ble.jpg');
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.bloc_page{
+	margin: auto;
+	width: 1200px; 
+}
+
+p{
+	font-family: Helvetica, sans-serif;
+}
+
+
+
+/*///////////////////////////////////////////////////////*/
+
+/*Header*/     /*Valable pour toutes pages*/
+header{
+	position: static;
+}
+
+#div_titre{
+	display: inline-block;
+}
+
+header h1{
+	font-family: helvetica;
+	font-size: 5em;
+}
+
+header h1 a{
+  text-decoration: none;
+  color: black;
+}
+
+#logo {
+	margin-left: 5px;
+	margin-top: 5px;
+	width: 100px;
+	display: inline-block;
+}
+
+#logo, header h1{
+	display: inline-block;
+	margin-bottom: 0px;
+  vertical-align: bottom;
+}
+
+header h2{
+	font-family: helvetica, serif;
+  font-size: 1.5em;
+  margin-top: 0px;
+  margin-left: 20px;
+}
+
+#separateur{
+	width: 98%;
+}
+
+
+/*Navigateur*/
+#navigateur{
+	display: inline-block;
+	width: 800px;
+	text-align: right;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+#navigateur ul{
+	list-style-type: none;
+	display: inline-block;
+}
+
+#navigateur li{ 
+	display: inline-block;
+	margin-right: 15px;
+}
+
+#navigateur a {
+  color: #181818;
+  text-decoration: none;
+}
+
+#navigateur a:hover{
+	color: #760001;
+  border-bottom: 3px solid #760001;
+}
+
+/*Fin Header*/
+
+/*/////////////////////////////////////////////////*/
+
+
+/* Bannières */
+/*Bannières de la page d'accueil*/
+#banniere_image
+{
+    margin-top: 15px;
+    height: 250px;
+    width: 1200px;
+    border-radius: 5px;
+    background: url('../images/banniere_biere.jpg') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}
+
+/*Bannière de la page formulaire*/
+#banniere_image2
+{
+    margin-top: 15px;
+    height: 250px;
+    width: 1200px;
+    border-radius: 5px;
+    background: url('../images/banniere2.jpg') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}
+
+/*Bannière de la page liste_biere*/
+#banniere_image3
+{
+    margin-top: 15px;
+    height: 250px;
+    width: 1200px;
+    border-radius: 5px;
+    background: url('../images/bieres_super-heros.jpg') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}
+
+/*Pour toutes les pages avec une banière*/
+#banniere_description
+{
+    position: absolute;
+    bottom: 0;
+    border-radius: 0px 0px 5px 5px;
+    width: 98.8%;
+    height: 33px;
+    padding-top: 15px;
+    padding-left: 15px;
+    background-color: rgba(24,24,24,0.8);
+    color: white;
+    font-size: 20px;
+    font-family: helvetica, serif;
+}
+
+
+/*Fin bannières*/
+
+
+
+/*Section juste sous la bannière, contient uniquement une phrase*/
+#section1{
+	position: relative;
+	width: 100%;
+	text-align: center;
+  border-radius: 5px;
+    /* Fallback for web browsers that don't support RGBa */
+    background-color: rgb(128, 128, 128);
+    /* RGBa with 0.8 opacity */
+    background-color: rgba(128, 128, 128, 0.8);
+}
+
+#texte_presentation{
+  font-family: andalus;
+  font-size: 1.56em;
+  font-weight: bold;
+
+}
+
+/*//////////////////////////////////////////////////////*/
+
+
+/*Section principale contient une autre section et un aside*/
+#section_principale{
+	margin-top: 20px;
+}
+
+
+
+
+
+/*Section secondaire*/  /*Pour toutes les pages*/
+aside , #section_secondaire{
+	display: inline-block;
+	vertical-align: top;
+  text-align: justify;
+}
+
+#section_secondaire{
+	width: 73.2%;
+	margin-top: 0px;
+	margin-left: 15px;
+	margin-right: 0px;
+  padding: 20px;
+      /* Fallback for web browsers that don't support RGBa */
+    background-color: rgb(199, 199, 199);
+    /* RGBa with 0.6 opacity */
+    background-color: rgba(199, 199, 199, 0.8);
+  border-radius: 5px;
+}
+
+
+/*Page d'accueil*/
+#fabrication_biere{
+  font-size: 1em;
+  border: none;
+  font-family: helvetica;
+}
+
+#fabrication_biere p{
+  color: CC6600;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  font-size: 1em;
+  border: none;
+  font-family: helvetica;
+}
+
+.titre_acceuil{
+  color: CC6600;
+  margin-top: 0;
+}
+
+video{
+  text-align: center;
+  border-radius: 5px;
+}
+
+/*Pour la page des bières et le tableau de présentation des bières*/
+#tableau_presentation{
+	position: relative;
+	width: 100%;
+}
+
+#tableau_presentation #img_biere{
+	width: 130px;
+  box-shadow: 6px 6px 6px grey;
+  border-radius: 5px;
+
+}
+
+#tableau_presentation .div_biere{
+  display: inline-block;
+	width: 48.7%;
+	border : solid;
+	border-color: black;
+	border-radius: 5px;
+	padding : 0px;
+  margin-bottom: 10px;
+
+}
+
+.nom_biere{
+  position: relative;
+  top: 0px;
+  background-color: CC6600;
+  text-align: center;
+}
+
+#section_secondaire h1{
+	font-family: helvetica;
+	font-size: 25px;
+  margin-top: 0px;
+}
+
+#img_biere, #info_biere{
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 0px;
+}
+
+#info_biere ul{
+  list-style-type: none;
+}
+
+#info_biere .tab_description{
+  width: 100%;
+  border-spacing:0px;
+}
+
+#info_biere .tab_description td{
+  width: auto;
+  padding-left: 25px;
+  border: none;
+}
+
+#bloc_info{
+	position: relative;
+	left : 15px;
+}
+
+#espace_bouton{
+	position: relative;
+  bottom: 0;
+  width: 99%;
+  height: 33px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  background-color: rgba(24,24,24,0.8);
+  text-align: center;
+}
+
+.myButton {
+  -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf));
+  background:-moz-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+  background:-webkit-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+  background:-o-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+  background:-ms-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+  background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf',GradientType=0);
+  background-color:#ededed;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  border:1px solid #dcdcdc;
+  display:inline-block;
+  cursor:pointer;
+  color:rgba(24,24,24,0.8);
+  font-family:arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:6px 24px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #ffffff;
+}
+.myButton:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed));
+  background:-moz-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+  background:-webkit-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+  background:-o-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+  background:-ms-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+  background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed',GradientType=0);
+  background-color:#dfdfdf;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+
+.bouton_supprimer{
+  border: none;
+  vertical-align: middle;
+  width: 20px;
+  cursor:pointer;
+}
+
+
+#div_btn_lien_formulaire{
+  text-align: center;
+  margin: 50px;
+}
+
+/*Fin de la section secondaire*/
+
+
+/*//////////////////////////////////////////////////////////////*/
+
+
+/*Bloc du côté*/
+aside
+{
+    position: relative;
+    width: 20%;
+    background-color: grey;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-family: helvetica;
+    font-size: 1.1em;
+}
+
+#les_logos{
+  text-align: center;
+}
+
+aside h1{
+  font-size: 20px;
+  text-align: center;
+}
+
+#fleche_bulle
+{
+    position: absolute;
+    top: 100px;
+    right: -12px;
+}
+
+#photo_homer
+{
+    text-align: center;
+}
+
+#photo_homer img
+{
+    width: 180px;
+    border: 1px solid #181818;
+}
+
+#liste_categories{
+  text-transform: uppercase;
+  text-align: center;
+  padding-left: 0px;
+}
+
+#liste_categories ul{
+  list-style-type: none;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+#liste_categories li{
+  margin-top: 20px;
+}
+
+#liste_categories a {
+  color: white;
+  text-decoration: none;
+}
+
+#liste_categories a:hover{
+  color: CC6600;
+  border-bottom: 2px solid CC6600;
+}
+
+#logo_capsule {
+  text-align: center;
+}
+
+#logo_capsule img{
+  width: 150px;
+}
+
+
+/*Fin du aside*/
+/*Fin de la section principale*/
+
+
+
+
+
+/*Formulaire*/ /*S'applique à la page "Formulaire d'ajout"*/
+#formulaire_ajout fieldset {
+  border: solid;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border-color: grey;
+}
+
+
+form#formulaire_ajout legend {
+  color: CC6600;
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  text-shadow: 0 1px 1px #c0d576;
+}
+
+
+form#formulaire_ajout ol li {
+  background: #b9cf6a;
+  background: rgba(255,255,255,.5);
+  border-color: #e3ebc3;
+  border-color: rgba(255,255,255,.6);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  line-height: 30px;
+  list-style: none;
+  padding: 5px 10px;
+  margin-bottom: 2px;
+  margin-right: 40px;
+}
+
+form#formulaire_ajout label {
+  float: left;
+  font-size: 15px;
+  width: 200px;
+}
+
+form#formulaire_ajout ol ol li {
+  background: none;
+  border: none;
+  float: left;
+}
+
+form, fieldset fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+#asterix{
+  font-size: 10px;
+  font-style: italic;
+  margin-bottom: 0px;
+}
+
+/*Notation étoilée*/ /*Cette méthode n'est pas du tout fonctionnelle pour l'instant, une autre méthode sera mise
+en place lorsque le formulaire sera lié à la BDD*/
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: left;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
+
+form fieldset input, textarea, select {
+ padding:3px;
+ border: none;
+ border-radius:5px;
+ width:200px;
+}
+
+#telecharge_photo{
+  padding:3px;
+  border: none;
+  border-radius:5px;
+  width:300px;
+}
+
+#tab_btn_radio{
+  padding: 3px;
+  margin: 0px;
+}
+form#formulaire_ajout .btn_radio{
+  width: 80px;
+}
+
+form#formulaire_ajout .label_btn_radio{
+  width: 0px;
+  padding-top: 0px;
+}
+
+li#toHide{
+  display: none;
+}
+
+#formulaire_ajout .bloc_btn{
+  border: none;
+}
+
+.btn_submit {
+  background-color: CC6600;
+  border: none;
+  border-radius: 20px;
+  color: #ffffff;
+  display: block;
+  font: 18px Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 1px;
+  margin: auto;
+  padding: 7px 25px;
+  text-shadow: 0 1px 1px #000000;
+  text-transform: uppercase;
+}
+
+.btn_submit:hover{
+  background: grey;
+  cursor: pointer;
+}
+/*Fin du formulaire*/
+
+/*//////////////////////////////////////////////////////*/
+
+
+
+/*Article*/    /*S'applique à la page "Fiche détaillée"*/
+#article_biere{
+  border:solid;
+  border-radius: 5px;
+  border-color: grey;
+}
+
+#article_biere h1{
+  text-align: center;
+  background-color: CC6600;
+  margin-top: 0;
+}
+
+#la_photo_en_grand img{
+  width: 400px;
+  box-shadow: 6px 6px 6px black;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+#la_photo_en_grand, #detail_biere{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#detail_biere{
+  padding-left: 40px;
+}
+
+#description_biere{
+  margin:20px;
+}
+
+#tableau_commentaires{
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border-spacing:0px;
+}
+
+
+#tableau_commentaires .internaute{
+  width: 25%;
+  padding: 20px;
+  text-align: center;
+
+}
+#tableau_commentaires .commentaire{
+  padding: 20px;
+  text-align: center;
+
+
+}
+
+#tableau_commentaires td{
+  border:solid;
+  border-width: 1px;
+  background-color: grey;
+  padding: 10px
+}
+/*/////////////////////////////////////////////////////////////*/
+
+/*Infos légales*/  /*S'applique à la page "Infos légales"*/
+#infos_legales{
+  font-size: 13px;
+  width: 60%;
+  margin: auto;
+  margin-top: 40px; 
+      /* Fallback for web browsers that don't support RGBa */
+    background-color: rgb(199, 199, 199);
+    /* RGBa with 0.6 opacity */
+    background-color: rgba(199, 199, 199, 0.8);
+  padding: 50px;
+}
+
+#infos_legales h1{
+  font-size: 30px;
+}
+
+#infos_legales h2{
+  margin-bottom: 0;
+}
+
+#separateur3{
+  width: 100%;
+  height: 0px;
+  color: black;
+  border-style: solid;
+  padding-top: 0;
+  margin-left: 0;
+}
+
+
+
+
+/*Footer*/      /*S'applique à toutes les pages*/
+footer{
+  border-radius: 5px 5px 0px 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  margin-top: 200px;
+  background: Grey;
+}
+
+#menu_footer{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#about, #partenaires, #connect{
+  width: 18%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+
+#about{
+  margin-right: 80px;
+  margin-left: 0px;
+}
+
+#connect{
+  margin-left: 80px;
+  margin-right: 0px;
+}
+
+footer ul{
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+footer a{
+  color : black;
+  text-decoration: none;
+}
+
+footer a:hover{
+  color: white;
+}
+
+footer li img{
+  vertical-align: middle;
+}
+
+#separateur2{
+  width: 60%;
+
+}
+
+footer p{
+  font-size: 13px;
+  color:white;
+}
+/*Fin du Footer*/
